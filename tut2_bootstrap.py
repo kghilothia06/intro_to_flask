@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Mar 18 18:47:00 2020
+Created on Wed Mar 18 19:16:47 2020
 
 @author: KUSH
 """
@@ -17,4 +17,7 @@ def hello1():
     name="kush"
     return render_template("about.html",name2=name)
 
+@app.route("/bootstrap")
+def bstrap():
+    return render_template("bootstrap.html")
 app.run(debug=False)
